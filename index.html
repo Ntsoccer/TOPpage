@@ -23,7 +23,7 @@
         <div class="header-nav">
             <ul>
                 <li><a href="#japan">国内リーグ</a></li>
-                <li><a href="#foreign">海外リーグ</a></li>
+                <li><a href="#foreign">欧州リーグ</a></li>
             </ul>
         </div>
         </div>
@@ -48,7 +48,7 @@
 
     <section id="foreign">
         <div class="inner">
-          <h2 class="foreign-title">海外リーグ</h2>
+          <h2 class="foreign-title">欧州リーグ</h2>
           <div class="title-line"></div>
           <img src="img/IMG_2130.jpg" alt="海外リーグ" width="1000px" height="600px">
           <a href="https://ntsoccer.github.io/foreignleague/" class="to-link">詳しくはこちら</a>  
@@ -65,5 +65,27 @@
     </footer>
      <!-- Back To Top -->    
      <div id="page_top"><a href="#"></a></div>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script>
+         jQuery(function() {
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
+     </script>
+     
 </body>
 </html>
