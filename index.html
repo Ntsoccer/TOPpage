@@ -4,88 +4,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>サッカー特集</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-    <section id="header">
+    <header>
         <div class="inner">
-        <div class="header">        
-        <div class="header-left">
-            <h3>サッカー特集</h3>
-        </div>
-        <div class="header-nav">
-            <ul>
-                <li><a href="#japan">国内リーグ</a></li>
-                <li><a href="#foreign">欧州リーグ</a></li>
-            </ul>
-        </div>
-        </div>
-        </div>
-    </section>
-    <div id="mainimage">
-        <div class="inner">
-            <img src="img/49ef72b19c9b2addea8db508ca9b00b74.png" alt="" width="1263px" height="610px">
-            <div class="mainimage-txt">
-            <h1>サッカーの魅力を伝えます</h1>
+                <div class="header-right">
+                    <h3>サッカー特集</h3>
+                </div>
+                <div class="header-nav">
+                    <ul>
+                        <li><a href="#japan">国内リーグ</a></li>
+                        <li><a href="#foreign">欧州リーグ</a></li>                    
+                    </ul>
+                </div>
             </div>
-        </div>
+    </header>
+    <div id="mainimage">
+        <img src="img/49ef72b19c9b2addea8db508ca9b00b74.png" alt="" width="100%">
+        <h1>サッカーの魅力を伝えます</h1>
     </div>
     <section id="japan">
-      <div class="inner">
-        <h2 class="japan-title">国内リーグ</h2>
-        <div class="title-line"></div>
-        <img src="img/5449b697-c41c-6895-060f-ad148e0b7afd.jpg" alt="Jリーグ" width="1000px" height="600px">
-        <a href="https://ntsoccer.github.io/Jleague/" class="btn-open">詳しくはこちら</a>
-      </div>   
+        <div class="inner">
+            <h3 class="japan-title">国内リーグ</h3>
+            <div class="title-line"></div>
+            <img src="img/5449b697-c41c-6895-060f-ad148e0b7afd.jpg" alt="" width="100%">
+            <div class="button">
+                  <a href="https://ntsoccer.github.io/Jleague/">詳しくはこちら</a>
+            </div>
+        </div>
     </section>
-
     <section id="foreign">
         <div class="inner">
-          <h2 class="foreign-title">欧州リーグ</h2>
-          <div class="title-line"></div>
-          <img src="img/IMG_2130.jpg" alt="海外リーグ" width="1000px" height="600px">
-          <a href="https://ntsoccer.github.io/foreignleague/" class="btn-open">詳しくはこちら</a>  
+            <h3 class="foreign-title">欧州リーグ</h3>
+            <div class="title-line"></div>
+            <img src="img/IMG_2130.jpg" alt="" width="100%">
+            <div class="button">
+                  <a href="https://ntsoccer.github.io/foreignleague/">詳しくはこちら</a>
+            </div>
         </div>
     </section>
-
-    <footer id="footer"> 
-        <div class="inner">
-            <ul class="mb-0 about-social list-inline mt-4">
-                <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100015333374958"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="list-inline-item"><a href="https://twitter.com/UpvkMbpWSS10P0q"><i class="fab fa-twitter-square"></i></a></li>
-            </ul> 
+    <footer>
+        <div class="twitter">
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
         </div>
+        <div class="facebook">
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+        <div class="top-page">
+            <a href="#"><i class="fa fa-chevron-up fa-2x"></i></a>
+       </div>
     </footer>
-     <!-- Back To Top -->    
-     <div id="page_top"><a href="#"></a></div>
 
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script>
-         jQuery(function() {
-    var pagetop = $('#page_top');   
-    pagetop.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
-            pagetop.fadeIn();
-        } else {
-            pagetop.fadeOut();
-        }
-    });
-    pagetop.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500); //0.5秒かけてトップへ移動
-        return false;
-    });
-});
-     </script>
-     
 </body>
 </html>
